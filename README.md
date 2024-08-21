@@ -17,3 +17,17 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+# api url
+https://bloomly.onrender.com
+
+
+    created() {
+    this.$store.dispatch("fetchAllProducts");
+  },
+  computed: {
+    products() {
+      return this.$store.state.products;
+    },
+  }

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0f0f0f;
+  --secondary-color: #f5f5f5;
+  --accent-color: #5d3fd3;
+  --text-color: #f5f5f5;
+  --text-color-secondary: #0f0f0f;
+  --text-color-tertiary: #5d3fd3;
+}
+
+#app {
+  font-family: "Exo", sans-serif, Avenir, Helvetica, Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  color: var(--text-color-secondary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color-tertiary);
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 2rem 0;
+  }

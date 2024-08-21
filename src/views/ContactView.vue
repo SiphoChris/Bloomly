@@ -1,31 +1,38 @@
 <template>
-  <div class="about">
-    <AboutComp />
-    <Footer id="footer" />
+  <div class="contact">
+    <Form />
+    <Footer id="footer"/>
   </div>
 </template>
 <script>
 import Footer from "@/components/FooterComp.vue";
-import AboutComp from "@/components/AboutComp.vue";
+import Form from "@/components/FormComp.vue";
 export default {
-  name: "AboutView",
+  name: "ContactView",
   components: {
-    AboutComp,
+    Form,
     Footer,
   },
 };
 </script>
 <style scoped>
-.about {
+.contact{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 5rem 0 0 0;
-  gap: 3rem;
+  gap: 5rem;
+}
+#footer{
+    width: 100%;
 }
 
-#footer {
-  width: 100%;
+@media (max-width: 600px) {
+  .contact {
+    gap: 0;
+    padding: 2rem 0 0 0;
+    width: 100%;
+  }
 }
 </style>
