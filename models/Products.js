@@ -51,12 +51,6 @@ class Product {
             .status(404)
             .json({ status: res.statusCode, error: "product not found" });
         }
-        const product = results.find((product) => product.prodID === prodID);
-        if (!product) {
-          return res
-            .status(404)
-            .json({ status: res.statusCode, error: "Product not found" });
-        }
         res.status(200).json({
           status: res.statusCode,
           results: results[0],

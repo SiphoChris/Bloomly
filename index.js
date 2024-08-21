@@ -1,6 +1,5 @@
 import express from "express";
 import cors from 'cors'
-import {corsResolver} from './middlewares/corsResolver.js'
 import path from "path";
 import { fileURLToPath } from "url";
 import "dotenv/config";
@@ -19,7 +18,17 @@ const port = +process.env.PORT || 4000;
 // middleware
 server.use(express.static("./static"), express.urlencoded({ extended: true }));
 server.use(routes);
-server.use(cors(corsResolver))
+
+server.use((req, res, next)=>{
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Credentials", "true");
+    res.header("Access-Control-Allow-Methods", "*");
+    res.header("Access-Control-Request-Methods", "*");
+    res.header("Access-Control-Allow-Headers", "*");
+    res.header("Access-Control-Expose-Headers", "Authorization");
+    next()
+})
+server.use(cors())
 
 // base route
 server.get("/", (req, res) => {
