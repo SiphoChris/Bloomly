@@ -2,6 +2,7 @@
   <div class="admin">
     <div class="container">
       <h1>Admin</h1>
+      <Modal />
       <TableComp />
     </div>
     <Footer id="footer" />
@@ -10,9 +11,11 @@
 <script>
 import Footer from "@/components/FooterComp.vue";
 import TableComp from "@/components/TableComp.vue";
+import Modal from "@/components/ModalComp.vue";
 export default {
   name: "AdminView",
   components: {
+    Modal,
     TableComp,
     Footer,
   },

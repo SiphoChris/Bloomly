@@ -15,13 +15,14 @@
   .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    padding: 16px;
+    gap: 5rem;
+    justify-items: center;
   }
   
   @media (max-width: 768px) {
     .grid-container {
       grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
     }
   }
   

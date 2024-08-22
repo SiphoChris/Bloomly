@@ -1,12 +1,12 @@
 <template>
   <div class="products">
     <Products />
-    <Footer />
+    <Footer id="footer"/>
   </div>
 </template>
 <script>
-import Footer from "@/components/FooterComp.vue";
 import Products from "@/components/ProductsComp.vue";
+import Footer from "@/components/FooterComp.vue";
 
 export default {
   name: "ProductsView",
@@ -16,4 +16,17 @@ export default {
   },
 };
 </script>
-<style scoped></style>
+<style scoped>
+.products{
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+#footer{
+    width: 100%;
+}
+</style>

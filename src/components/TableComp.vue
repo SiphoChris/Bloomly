@@ -4,40 +4,33 @@
       <table class="table table-hover table-dark">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Manage</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
+            <slot name="tableRows"></slot>
         </tbody>
       </table>
     </div>
     <br>
     <br>
     <h2>Users</h2>
-    <div class="table-responsive">
+    <div class="productsTable-responsive">
       <table class="table table-hover table-dark">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+            <th scope="col">Manage</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
+            <slot name="usersTableRows"></slot>
         </tbody>
       </table>
     </div>
@@ -48,3 +41,9 @@ export default {};
 </script>
 
 <style></style>
+
+<!-- <tr>
+    <th scope="row">3</th>
+    <td colspan="1">Larry the Bird</td>
+    <td>@twitter</td>
+  </tr> -->
