@@ -16,9 +16,6 @@ const port = +process.env.PORT || 4000;
 
 
 // middleware
-server.use(express.static("./static"), express.urlencoded({ extended: true }));
-server.use(routes);
-
 server.use((req, res, next)=>{
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Credentials", "true");
@@ -29,6 +26,9 @@ server.use((req, res, next)=>{
     next()
 })
 server.use(cors())
+server.use(express.static("./static"), express.urlencoded({ extended: true }));
+server.use(routes);
+
 
 // base route
 server.get("/", (req, res) => {
