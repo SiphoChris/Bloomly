@@ -6,7 +6,7 @@ class User {
   fetchAllUsers(req, res) {
     try {
       const queryString = `
-                      SELECT userID, firstName, lastName, emailAdd, userProfile 
+                      SELECT * 
                       from Users;
                       `;
       db.query(queryString, (err, results) => {
@@ -38,7 +38,7 @@ class User {
         params: { userID },
       } = req;
       const queryString = `
-            SELECT userID, firstName, lastName, emailAdd, userProfile
+            SELECT *
             FROM Users
             WHERE userID = ?;
           `;
@@ -160,7 +160,7 @@ class User {
         body: { emailAdd, userPass },
       } = req;
 
-      const queryString = `SELECT userID, firstName, lastName, emailAdd, userProfile, userPass
+      const queryString = `SELECT *
                           FROM Users
                           WHERE emailAdd = ?;`;
 
