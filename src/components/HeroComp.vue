@@ -89,6 +89,12 @@ p {
   font-weight: bold;
 }
 
+@media screen and (max-width: 400px) {
+    p{
+        width: 22ch;
+    }
+}
+
 @media (max-width: 600px) {
   .hero-container {
     height: 75vh;

@@ -83,4 +83,9 @@ data() {
   min-height: 100dvh;
   padding-top: 5rem;
 }
+@media screen and (max-width: 995px) {
+    #recent-products {
+        margin-bottom: 3rem;
+    }
+}
 </style>

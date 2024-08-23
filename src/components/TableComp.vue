@@ -24,7 +24,7 @@
     <br>
     <br>
     <h2>Users</h2>
-    <div class="productsTable-responsive">
+    <div class="table-responsive">
       <table class="table table-hover table-dark table-bordered align-middle">
         <thead>
           <tr>

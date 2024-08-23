@@ -281,6 +281,12 @@ h1 {
   min-height: 100dvh;
   padding-top: 6rem;
 }
+@media screen and (max-width: 400px) {
+    p{
+        width: 22ch;
+    }
+}
+
 #product-image {
   width: 10rem;
   height: 10rem;

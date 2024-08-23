@@ -1,7 +1,7 @@
 <template>
   <div id="home">
     <Hero />
-    <RecentProducts />
+    <RecentProducts id="recent-products" />
     <Footer />
   </div>
 </template>
@@ -22,4 +22,6 @@ export default {
   },
 };
 </script>
-<style src="../assets/css/style.css"></style>
+<style src="../assets/css/style.css">
+
+</style>

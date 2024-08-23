@@ -79,7 +79,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 100dvh;
   margin-top: 12rem;
 }
+
 </style>

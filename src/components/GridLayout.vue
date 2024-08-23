@@ -19,14 +19,14 @@
     justify-items: center;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 990px) {
     .grid-container {
       grid-template-columns: repeat(2, 1fr);
       gap: 3rem;
     }
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: 640px) {
     .grid-container {
       grid-template-columns: 1fr;
     }
