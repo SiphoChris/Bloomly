@@ -57,17 +57,24 @@ footer {
   width: 16rem;
   box-shadow: 0 0.5rem 1rem -0.25rem var(--primary-shadow);
   background-color: var(--light);
-
   border-radius: 1rem;
-}
+  transition: transform 0.5s ease;
+}   
 
 .card:hover {
   box-shadow: 0 0.5rem 1rem -0.25rem var(--primary-800);
   background-color: rgba(109, 9, 109, 0.215);
   cursor: pointer;
-  transform: scale(1.1);
-  transition: 0.5s;
+  animation: zoomIn 0.5s forwards;
 }
+@keyframes zoomIn {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
 
 .image_container {
   overflow: hidden;
