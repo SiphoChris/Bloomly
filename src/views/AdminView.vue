@@ -44,12 +44,12 @@
         <Modal id="addProductModal">
           <template v-slot:modalContent>
             <div class="modal-body text-center d-flex justify-content-center align-items-center flex-column gap-3">
-              <input v-model="newProduct.prodName" type="text" placeholder="Product Name" />
-              <input v-model="newProduct.amount" type="text" placeholder="Product Price" />
-              <input v-model="newProduct.prodUrl" type="text" placeholder="Product Image URL" />
-              <input v-model="newProduct.Category" type="text" placeholder="Product Category" />
-              <input v-model="newProduct.quantity" type="text" placeholder="Product Quantity" />
-              <input v-model="newProduct.prodDescription" type="text" placeholder="Product Description" />
+              <input required v-model="newProduct.prodName" type="text" placeholder="Product Name" />
+              <input required v-model="newProduct.amount" type="text" placeholder="Product Price" />
+              <input required v-model="newProduct.prodUrl" type="text" placeholder="Product Image URL" />
+              <input required v-model="newProduct.Category" type="text" placeholder="Product Category" />
+              <input required v-model="newProduct.quantity" type="text" placeholder="Product Quantity" />
+              <input required v-model="newProduct.prodDescription" type="text" placeholder="Product Description" />
             </div>
           </template>
           <template v-slot:modalFooter>
@@ -62,12 +62,12 @@
         <Modal id="addUserModal">
           <template v-slot:modalContent>
             <div class="modal-body text-center d-flex justify-content-center align-items-center flex-column gap-3">
-              <input v-model="newUser.firstName" type="text" placeholder="First Name" />
-              <input v-model="newUser.lastName" type="text" placeholder="Last Name" />
-              <input v-model="newUser.emailAdd" type="email" placeholder="Email Address" />
-              <input v-model="newUser.userAge" type="number" placeholder="Age" />
-              <input v-model="newUser.userRole" type="text" placeholder="Role" />
-              <input v-model="newUser.userProfile" type="text" placeholder="Profile" />
+              <input required v-model="newUser.firstName" type="text" placeholder="First Name" />
+              <input required v-model="newUser.lastName" type="text" placeholder="Last Name" />
+              <input required v-model="newUser.emailAdd" type="email" placeholder="Email Address" />
+              <input required v-model="newUser.userAge" type="number" placeholder="Age" />
+              <input required v-model="newUser.userRole" type="text" placeholder="Role" />
+              <input required v-model="newUser.userProfile" type="text" placeholder="Profile" />
             </div>
           </template>
           <template v-slot:modalFooter>
