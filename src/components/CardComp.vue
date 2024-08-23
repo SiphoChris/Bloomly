@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <div class="card" data-aos="zoom-in-up">
       <div class="image_container">
         <slot name="cardImage"></slot>
       </div>
@@ -16,3 +16,4 @@
 
 <style src="../assets/css/style.css">
 </style>
+
