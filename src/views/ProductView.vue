@@ -51,7 +51,7 @@ export default {
 </script>
 <style scoped>
 .product {
-    padding-top: 12rem;
+  padding-top: 12rem;
 }
 .product-wrapper {
   display: flex;
@@ -69,12 +69,13 @@ export default {
   box-shadow: 10px 10px 50px gray;
 }
 .product-image {
-  width: 100%;
-  height: 100%;
+  width: 8rem;
+  height: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .product-details {
   display: flex;
   flex-direction: column;

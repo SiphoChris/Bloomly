@@ -6,7 +6,7 @@
         <div id="sort">
           <div class="dropdown">
             <button
-              class="btn btn-secondary dropdown-toggle"
+              class="btn btn-primary dropdown-toggle"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -14,6 +14,12 @@
               Sort
             </button>
             <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" @click="highToLow">High to low</a>
+              </li>
+              <li>
+                <a class="dropdown-item" @click="lowToHigh">Low to high</a>
+              </li>
               <li>
                 <a class="dropdown-item" @click="ascendingSort">Ascending</a>
               </li>
@@ -33,7 +39,7 @@
                 v-model="filterText"
                 id="filter-field"
                 type="text"
-                class="form-control"
+                class="form-control border-2 border-primary"
                 placeholder="Search..."
               />
             </div>
@@ -120,6 +126,16 @@ export default {
     descendingSort() {
       this.products.sort((a, b) => b.prodName.localeCompare(a.prodName));
     },
+    highToLow() {
+      this.products.sort((a, b) => b.amount - a.amount);
+    },
+    lowToHigh() {
+      this.products.sort((a, b) => a.amount - b.amount);
+    },
+
+    clearFilter() {
+      this.filterText = "";
+    },
   },
   mounted() {
     this.fetchAllProducts();
@@ -147,7 +163,7 @@ export default {
     margin-bottom: 1rem;
   }
 
-li {
+li, a {
   cursor: pointer;
 }
 }
