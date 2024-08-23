@@ -11,7 +11,9 @@
             <th scope="col">Image</th>
             <th scope="col">Category</th>
             <th scope="col">Description</th>
-            <th scope="col">Manage</th>
+            <th scope="col">
+                <slot name="addProduct"></slot>
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -33,7 +35,9 @@
             <th scope="col">Age</th>
             <th scope="col">Role</th>
             <th scope="col">Profile</th>
-            <th scope="col">Manage</th>
+            <th scope="col">
+                <slot name="registerUser"></slot>
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -44,5 +48,7 @@
 </template>
 
 <script>
-export default {};
+export default {
+    name: 'TableComp',
+};
 </script>
