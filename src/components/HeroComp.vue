@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     scrollToProducts() {
-      const productsSection = document.getElementById("products");
+      const productsSection = document.getElementById("recent-products");
       if (productsSection) {
         productsSection.scrollIntoView({ behavior: "smooth" });
       }
@@ -54,6 +54,7 @@ export default {
 
 .hero-container > #wrapper {
   display: flex;
+  margin-top: 12rem;
   gap: 8rem;
   align-items: center;
 }

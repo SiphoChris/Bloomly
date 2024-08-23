@@ -23,10 +23,12 @@
                 <div class="price">
                   <span>R{{ product.amount }}</span>
                 </div>
-                <router-link :to="{name: 'product', params:{id: product.prodID}}">
+                <router-link
+                  :to="{ name: 'product', params: { id: product.prodID } }"
+                >
                   <button class="cart-button">
-                  <span>View Details</span>
-                </button>
+                    <span>View Details</span>
+                  </button>
                 </router-link>
               </div>
             </template>
@@ -78,6 +80,6 @@ export default {
   justify-content: center;
   align-items: center;
   min-width: 100dvh;
+  margin-top: 12rem;
 }
-
 </style>

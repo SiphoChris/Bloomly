@@ -50,6 +50,9 @@ export default {
 };
 </script>
 <style scoped>
+.product {
+    padding-top: 12rem;
+}
 .product-wrapper {
   display: flex;
   flex-direction: column;

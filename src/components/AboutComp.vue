@@ -1,5 +1,6 @@
 <template>
   <div class="about">
+    <h1>About Us</h1>
     <p v-for="text in about" :key="text">{{ text }}</p>
   </div>
 </template>

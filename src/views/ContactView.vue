@@ -21,7 +21,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem 0 0 0;
+  padding: 12rem 0 0 0;
   gap: 5rem;
 }
 #footer{
